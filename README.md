@@ -1,6 +1,7 @@
+[![Crates.io](https://img.shields.io/crates/v/pluck.svg)](https://crates.io/crates/pluck)
+
 # pluck
 
-## pluck!
 `pluck!` is a macros that creates a lambda that plucks the provided
 property from the argument. Great with iterators.
 
@@ -101,3 +102,5 @@ let mut list = vec![[&Person { name: "Alice" }]];
 let derefed = list.iter_mut().map(pluck!((*[0]).name)).collect::<Vec<_>>();
 assert_eq!(derefed, &["Alice"]);
 ```
+
+# License: MIT

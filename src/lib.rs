@@ -1,4 +1,3 @@
-//! # pluck!
 //! `pluck!` is a macros that creates a lambda that plucks the provided
 //! property from the argument. Great with iterators.
 //! 
